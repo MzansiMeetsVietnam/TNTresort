@@ -114,6 +114,11 @@
     }
     .highlight {
       background: #FFEBE6;
+      padding: 1em;
+      margin: 20px 0;
+      border-left: 6px solid #D35400;
+      font-weight: 600;
+      color: #BF6B2C;
     }
     ul.opportunities {
       max-width: 700px;
@@ -127,6 +132,10 @@
       padding: 1em 0;
       margin-top: 3em;
       font-size: 0.9rem;
+    }
+    canvas {
+      max-width: 100%;
+      margin: 1em 0 2em 0;
     }
     @media (max-width: 600px) {
       h1 {
@@ -150,6 +159,7 @@
 <nav>
   <ul>
     <li><a href="#summary">Summary</a></li>
+    <li><a href="#highlights">Phu Quoc Highlights</a></li>
     <li><a href="#model">Business Model</a></li>
     <li><a href="#staffing">Staffing</a></li>
     <li><a href="#revenue">Revenue</a></li>
@@ -169,25 +179,45 @@
   <p>
     T&T Resort, located on beautiful Phu Quoc Island, combines leisure, wellness, and adventure in a boutique lifestyle destination. Our vision includes a rooftop cocktail bar with live sunset music, a wellness-focused spa, health shop, restaurant, and an integrated tour company — <strong>TNT Tours</strong>. The resort targets the growing market for immersive, wellness, and experiential travel.
   </p>
+  <div class="highlight">
+    Prime location just 200m from the beach, ideal for breathtaking sunsets and easy access to Long Beach and the vibrant town center.
+  </div>
+</section>
+
+<section id="highlights">
+  <h2>Phu Quoc Island: Growth & Upcoming APEC 2027</h2>
+  <p>
+    Phu Quoc has rapidly transformed into Vietnam's premier island destination, with tourist arrivals growing exponentially over the past decade. The government’s investments in infrastructure and international flights have fueled this boom.
+  </p>
+  <p>
+    The upcoming <strong>APEC Summit 2027</strong> is set to bring unprecedented global attention and increased tourism, making Phu Quoc a hotspot for investors and travelers alike.
+  </p>
+  <p>
+    This growth presents a perfect opportunity for T&T Resort to capitalize on rising demand for quality accommodations, wellness experiences, and curated tours.
+  </p>
+
+  <canvas id="touristGrowthChart" aria-label="Tourist arrivals growth chart" role="img"></canvas>
+  <canvas id="revenuePieChart" aria-label="Revenue streams distribution pie chart" role="img"></canvas>
 </section>
 
 <section id="model">
   <h2>Business Model Components</h2>
-  <p><strong>1.</strong> Rooftop Cocktail Bar (5 PM–11 PM daily) featuring themed cocktails, snacks, and live music during sunset.</p>
-  <p><strong>2.</strong> Wellness Zone with spa treatments, a health-focused restaurant, and a wellness shop.</p>
-  <p><strong>3.</strong> TNT Tours offering curated island tours, BBQ boat charters, and private experiences booked via the resort.</p>
+  <p><strong>1.</strong> <strong>Rooftop Cocktail Bar</strong> (high season only): Open 5 PM–11 PM featuring themed cocktails, snacks, and live music during sunset.</p>
+  <p><strong>2.</strong> <strong>Wellness Zone</strong>: Spa treatments, health-focused restaurant, and wellness shop using authentic Vietnamese products to maintain affordability and quality.</p>
+  <p><strong>3.</strong> <strong>TNT Tours</strong>: Curated island tours including BBQ boat charters, snorkeling, and private adventures.</p>
+  <p><strong>4.</strong> <strong>Guest Rooms</strong>: Boutique rooms offered at 500k–600k VND/night low season, 800k–1 million VND/night high season, targeting mid-range to luxury tourists.</p>
 </section>
 
 <section id="staffing">
   <h2>Staffing & Compensation</h2>
   <p>Initially staffed with 3 full-time employees:</p>
   <ul>
-    <li>Manager/Receptionist (handling bookings and front desk)</li>
-    <li>Bar/Kitchen Lead</li>
-    <li>Spa Lead</li>
+    <li>Manager/Receptionist handling bookings and front desk operations.</li>
+    <li>Bar/Kitchen Lead for rooftop cocktail bar and restaurant.</li>
+    <li>Spa Lead responsible for treatments and wellness services.</li>
   </ul>
-  <p>Staff are paid 6–8 million VND/month plus 5–10% commission on sales.</p>
-  <p>Volunteers supplement operations, receiving accommodation, meals, and commission-based incentives.</p>
+  <p>Staff are paid a competitive salary of 6–8 million VND/month plus 5–10% commission on sales.</p>
+  <p>Volunteers supplement operations, receiving accommodation, meals, and commission-based incentives, reducing labor costs and building community engagement.</p>
 </section>
 
 <section id="revenue">
@@ -198,33 +228,36 @@
     </thead>
     <tbody>
       <tr><td>Rooms</td><td>15 rooms, ~60% occupancy, seasonal pricing</td><td>Upsell packages: spa, tours, drinks</td></tr>
-      <tr><td>Rooftop Cocktail Bar</td><td>Drinks, snacks, live events, private bookings</td><td>Special events, mixology workshops</td></tr>
-      <tr><td>Wellness Spa</td><td>Massages, facials, wellness & yoga retreats</td><td>Package add-ons</td></tr>
-      <tr><td>Health Restaurant</td><td>Healthy meals, smoothies, juices</td><td>Seasonal/local menus</td></tr>
-      <tr><td>Health Shop</td><td>Supplements, herbal products, wellness merchandise</td><td>Local partnerships</td></tr>
-      <tr><td>TNT Tours</td><td>Curated island tours, BBQ boat charters, private tours</td><td>VIP/private tours</td></tr>
-      <tr><td>Events & Private Bookings</td><td>Rooftop parties, corporate retreats, weddings</td><td>Team building, weddings</td></tr>
+      <tr><td>Rooftop Cocktail Bar</td><td>Drinks, snacks, live events, private bookings (high season only)</td><td>Special events, mixology workshops</td></tr>
+      <tr><td>Wellness Spa</td><td>Massages, facials, herbal treatments, ice baths</td><td>Package add-ons and wellness programs</td></tr>
+      <tr><td>Health Restaurant</td><td>Healthy meals, smoothies, juices (high season only)</td><td>Seasonal/local menus, vegan options</td></tr>
+      <tr><td>Health Shop</td><td>Supplements, herbal products, wellness merchandise</td><td>Affordable Vietnamese sourced products</td></tr>
+      <tr><td>TNT Tours</td><td>Curated island tours, BBQ boat charters, private tours</td><td>VIP/private tours and combo packages</td></tr>
+      <tr><td>Events & Private Bookings</td><td>Rooftop parties, corporate retreats, weddings</td><td>Team building, celebrations</td></tr>
       <tr><td>Volunteer Program</td><td>Volunteers work for accommodation, food, and commission</td><td>Reduces labor costs, builds community</td></tr>
     </tbody>
   </table>
 </section>
 
 <section id="expenses">
-  <h2>Expense Breakdown</h2>
+  <h2>Expense Breakdown (Monthly Estimates in VND)</h2>
   <table>
     <thead>
-      <tr><th>Category</th><th>Details</th><th>Notes</th></tr>
+      <tr><th>Category</th><th>Details</th><th>Monthly Cost</th></tr>
     </thead>
     <tbody>
-      <tr><td>Salaries</td><td>3 full-time staff + volunteers with incentives</td><td>Volunteers receive accommodation, food, commission</td></tr>
-      <tr><td>Ingredients & Supplies</td><td>Bar, kitchen, spa consumables, health shop inventory</td><td>Seasonal bulk buying reduces costs</td></tr>
-      <tr><td>Utilities</td><td>Electricity, water, WiFi</td><td>Consider solar power to cut costs</td></tr>
-      <tr><td>Rent/Lease</td><td>Monthly lease fee</td><td>Negotiate long-term discounts</td></tr>
-      <tr><td>Marketing</td><td>Online ads, social media, flyers</td><td>Focus on digital marketing</td></tr>
-      <tr><td>Maintenance</td><td>Repairs, cleaning, landscaping</td><td>Volunteers may assist</td></tr>
-      <tr><td>Licensing & Permits</td><td>Business licenses, health permits</td><td>Full compliance</td></tr>
-      <tr><td>Insurance</td><td>Property and liability insurance</td><td>Protects against risks</td></tr>
-      <tr><td>Miscellaneous</td><td>Contingency fund (~5-10%)</td><td>Buffer for unexpected costs</td></tr>
+      <tr><td>Lease / Rent</td><td>6-year lease agreement</td><td>60,000,000</td></tr>
+      <tr><td>Electricity</td><td>High season usage for bar & restaurant</td><td>20,000,000</td></tr>
+      <tr><td>Water & Utilities</td><td>Water, WiFi, minor utilities</td><td>2,000,000</td></tr>
+      <tr><td>Salaries</td><td>3 full-time staff (6–8 million VND each) + commission</td><td>22,000,000</td></tr>
+      <tr><td>Part-time Staff</td><td>Seasonal hires for bar and restaurant</td><td>12,000,000</td></tr>
+      <tr><td>Bar Stock & Supplies</td><td>High season inventory for drinks & snacks</td><td>20,000,000</td></tr>
+      <tr><td>Spa Inventory & Health Shop Stock</td><td>Locally sourced affordable Vietnamese products</td><td>15,000,000</td></tr>
+      <tr><td>Ice Baths & Equipment</td><td>Initial setup amortized monthly</td><td>1,000,000</td></tr>
+      <tr><td>Marketing & Promotion</td><td>Online ads, flyers, influencer visits</td><td>4,000,000</td></tr>
+      <tr><td>Maintenance & Cleaning</td><td>Regular upkeep & volunteer assistance</td><td>3,000,000</td></tr>
+      <tr><td>Licensing & Permits</td><td>Business and health licenses</td><td>1,000,000</td></tr>
+      <tr><td>Miscellaneous / Contingency</td><td>Buffer for unexpected expenses</td><td>2,000,000</td></tr>
     </tbody>
   </table>
 </section>
@@ -236,15 +269,16 @@
     <li>Corporate wellness packages: team-building, yoga, detox retreats.</li>
     <li>Seasonal/off-peak specials to boost low season revenue.</li>
     <li>Retail expansion via online wellness product sales.</li>
-    <li>Sustainability initiatives like solar panels, rainwater harvesting.</li>
-    <li>Loyalty programs encouraging repeat customers.</li>
-    <li>Partnerships with local businesses for cross-promotion.</li>
+    <li>Sustainability initiatives: solar panels, rainwater harvesting.</li>
+    <li>Loyalty programs to encourage repeat visitors.</li>
+    <li>Partnerships with local businesses and influencers for cross-promotion.</li>
   </ul>
 </section>
 
 <section id="financials">
-  <h2>Financial Overview (6-Year Projections)</h2>
-  <h3>Revenue (VND)</h3>
+  <h2>Financial Overview (6-Year Projection in VND)</h2>
+
+  <h3>Estimated Annual Revenue</h3>
   <table>
     <thead>
       <tr>
@@ -261,9 +295,9 @@
     </tbody>
   </table>
 
-  <h3>Estimated Expenses (VND)</h3>
+  <h3>Estimated Annual Expenses</h3>
   <table>
-    <thead><tr><th>Year</th><th>Expenses</th></tr></thead>
+    <thead><tr><th>Year</th><th>Total Expenses</th></tr></thead>
     <tbody>
       <tr><td>Year 1</td><td>2,800,000,000</td></tr>
       <tr><td>Year 2</td><td>2,900,000,000</td></tr>
@@ -274,35 +308,4 @@
     </tbody>
   </table>
 
-  <h3>Estimated Profit (VND)</h3>
-  <table>
-    <thead><tr><th>Year</th><th>Profit</th></tr></thead>
-    <tbody>
-      <tr><td>Year 1</td><td>6,440,000,000</td></tr>
-      <tr><td>Year 2</td><td>7,300,000,000</td></tr>
-      <tr><td>Year 3</td><td>8,160,000,000</td></tr>
-      <tr><td>Year 4</td><td>9,020,000,000</td></tr>
-      <tr><td>Year 5</td><td>9,880,000,000</td></tr>
-      <tr><td>Year 6</td><td>10,740,000,000</td></tr>
-    </tbody>
-  </table>
-
-  <p><strong>Growth Opportunities & Conclusion:</strong></p>
-  <ul class="opportunities">
-    <li>Expand rooftop with wellness yoga & retreats.</li>
-    <li>Host themed events & cultural festivals monthly.</li>
-    <li>Scale TNT Tours with partnerships and online marketing.</li>
-    <li>Develop franchise or satellite locations.</li>
-  </ul>
-
-  <p>
-    T&T Resort Phu Quoc offers a unique, profitable destination appealing to wellness, adventure, and leisure travelers. Motivated local staff, volunteer support, and multiple revenue streams promise sustainable growth and excellent investor returns.
-  </p>
-</section>
-
-<footer>
-  © 2025 T&T Resort Phu Quoc Business Plan
-</footer>
-
-</body>
-</html>
+  <h3>Estimated Annual Profit</h
